@@ -1,0 +1,318 @@
+body {
+	margin: 0px;
+	font-family: helvetica;
+	background-color: white;
+}
+
+header {
+	
+	display: flex;
+	flex-direction: column;
+}
+
+.primary {
+	display: flex;
+	height: 100%;
+}
+
+#flex-right {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 90vw;	
+}
+
+.hideButton{
+	display: none;
+}
+
+.hideNav {
+	display: none;
+}
+.button {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	border: 2px solid black;
+	border-radius: 20px;
+	margin: 14px;
+	font-family: 'staatliches', cursive;
+	text-decoration-line: none;
+	color: black;
+}
+
+.button:hover {
+	color: white;
+	background-color: black;
+	border: 2px solid white;
+	cursor: pointer;
+}
+nav a {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	border: 2px solid black;
+	border-radius: 20px;
+	padding: 14px;
+	margin: 14px;
+	font-family: 'staatliches', cursive;
+	text-decoration-line: none;
+}
+nav a:hover {
+	color: white;
+	background-color: black;
+	border: 2px solid white;
+	cursor: pointer;
+}
+nav {
+	display:flex;
+	flex-direction: column;
+	background-color: white;
+	width: 10vw;
+	border-right: 2px solid black;
+}
+
+section {
+	padding: 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.content {
+	display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+	font-family: 'Lexend', sans-serif;
+	font-weight: 500;
+  }
+
+form{
+	margin-top: 60px;
+	margin-bottom: 60px;
+    width: 30vw;
+    align-items: center;
+}
+
+article {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: space-between;
+
+}
+
+.hidden {
+	display: none;
+}
+
+.hidden1 {
+	display: none;
+}
+
+.preferiti {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+    justify-content: flex-start;
+}
+
+h2{
+	display: block;
+	font-family: 'Lexend', sans-serif;
+}
+
+.principle {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.show1 {
+	padding: 10px;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.imgEvent {
+	display: flex;
+	max-width: 100%;
+}
+
+.details {
+	display: none;
+}
+
+.show {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 15px;
+	margin: 10px 25px;
+    flex-wrap: wrap;
+    align-items: center;
+	width: 20vw;
+}
+
+.show:hover {
+	border: 1px solid gray;
+	background-color: whitesmoke;
+}
+
+.icon {
+	margin-left: 30px;
+	height: 30px;
+	width: 30px;
+}
+
+.icon:hover {
+	height: 40px;
+	width: 40px;
+}
+
+.info {
+	margin-top: 15px;
+}
+
+.infop {
+	margin-top: 15px;
+}
+
+#fav {
+	display: flex;
+	flex-direction: column;
+}
+
+input {
+	height: 30px;
+	width: 150px;
+}
+
+span {
+	margin-bottom: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+h1 {
+	font-family: 'Dosis', sans-serif;
+	font-size:  4em;
+	margin: 14px;
+	text-shadow: 3px 3px 5px white; 
+	z-index: 1;
+}
+
+em {
+	font-family: 'staatliches', cursive;
+	font-size: 2em;
+	color : red;
+	display: flex;
+    justify-content: space-around;
+	margin-top: 40px;
+}
+
+.checkout {
+	display: flex;
+    justify-content: flex-end;
+}
+
+strong {
+	font-family: 'Acme', sans-serif;
+	font-size: 1.5em;
+}
+
+footer {
+	display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 2px solid black;
+    padding: 50px;
+    color: white;
+    background-color: dimgray;
+}
+.hide{
+	display: none;
+}
+
+nav button{
+	display: none;
+}
+.modale {
+	z-index: 2;
+	position: fixed;
+	top: -50px;
+	left: -50px;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.9);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+.popup {
+	padding: 10px;
+	background-color: ghostwhite;
+	width: 200px;
+	height: fit-content;
+	border-radius: 10%;
+}
+.no-scroll {
+	overflow: hidden;
+}
+@media (max-width: 700px){
+	body {
+		font-size: 0.85em;
+	}
+	
+	.content {
+	   flex-direction: column;
+	   justify-content: space-around;
+	   align-items: center;
+	   margin: 20px;
+	   text-align: center;
+	}
+	
+   nav .button {
+	   display: none;
+	}
+	
+	nav a{
+	   display: none;
+	}
+	nav button {
+		display: block;
+		background-color: white;
+		border : none;
+	}
+   .hideNav{
+		display: block;
+		width: 25px;
+	   margin-left: 9px;
+	}
+	.mostra {
+	   display: flex;
+	   justify-content: center;
+	   align-items: flex-start;
+	   border: 2px solid black;
+	   border-radius: 20px;
+	   margin: 14px;
+	   font-family: 'staatliches', cursive;
+	   text-decoration-line: none;
+	   color: black;
+   }
+   
+   .mostra:hover {
+	   color: white;
+	   background-color: black;
+	   border: 2px solid white;
+	   cursor: pointer;
+   }
+}
